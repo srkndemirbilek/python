@@ -17,3 +17,7 @@ message=" ".join(message) #['Hello', 'There.', 'My', 'Name', 'Is', 'Sadik', 'Tur
 print(message)
 message=message.replace('Sadik','Çınar')#message içerisinde geçen Sadik kelimesini Çınar İle Değiştir.
 print(message)
+message=message.center(70,".") #100 karaktederde ortala boşluklrı . ile doldur
+print(message)
+
+#doc.python.org
