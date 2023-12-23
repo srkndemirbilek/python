@@ -1,5 +1,5 @@
 website="http://www.sadikturan.com"
-course="Python Kursu:Baştan sona Python Programlama Rehberiniz(40 saat)"
+course="Python Kursu:Baştan sona Python Programlama Rehberiniz (40 saat)"
 
 #1- ' Hello World ' karakter dizisinde baş ve sondaki boşluk karakterlerini silin
 result=' Hello World '.strip() #her iki tarafıda siler
@@ -24,8 +24,36 @@ print(result)
 
 #6- 'website' içinde '.com' ifadesi varmı
 result=website.count('.com') #adet verir
-print(result)
+print(result) #1
 result=website.find('.com')#başladığı index numarasını verir
+print(result) #21
+result =course.count('Python',0,50)
+print(result)#2
+result=course.find('Python')
+print(result)#0
+result=course.index('Python')
+print(result) #0
+result=course.rindex('Python')
+print(result) #25
+
+#7- 'Course' içindeki karakterlerin hepsi alfabetik mi?
+result=course.isalpha()
+print(result) #False
+result='Hello'.isalpha()
+print(result) #True
+
+#8 'Contents' ifadesini satırda 50 karakter içinde yerleştirip sağına ve soluna * ekleyiniz.
+result='Contents'.center(50,'*')
 print(result)
-result=course.count('Python',0,50)
+
+#9 'course' karakter dizisindeki tüm boşluk karakterlerini '-' ile değiştirin.
+result=course.replace(' ','-')
+print(result)
+
+#10- 'Hello World' karakter dizisinde 'World ifadesini 'There' olarak değiştirin
+result='Hello World'.replace('World','There')
+print(result) 
+
+#11- 'course' karakter dizisindeki boşluk karakterlerinden ayırın.
+result=course.split()
 print(result)
