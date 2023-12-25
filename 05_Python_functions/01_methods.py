@@ -8,4 +8,3 @@ print(list)
 
 myStirng='hello'
 print(myStirng.upper)#upper burda bir method
-
